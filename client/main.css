@@ -1,0 +1,173 @@
+/* CSS declarations go here */
+@import 'https://fonts.googleapis.com/css?family=Roboto|Dosis';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  background-color: #384792;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0;
+  margin: 0;
+
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: white;
+}
+
+header {
+  padding: 20px 20px 20px 20px;
+  position: relative;
+}
+
+#login-buttons {
+  display: block;
+  text-decoration: none !important;
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 2.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+form {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  position: relative;
+}
+
+.new-task input {
+  box-sizing: border-box;
+  padding: 20px 80px 20px 10px;
+  background: transparent;
+  border: none;
+  width: 100%;
+  font-size: 1em;
+}
+
+.new-task input:focus{
+  outline: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  background: white;
+  padding-bottom: 2px;
+}
+
+.delete {
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 1em;
+  border: none;
+  position: relative;
+  color: #384792;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 3px;
+  margin: 2px 4px;
+}
+
+li .text {
+  margin-left: 10px;
+}
+
+li.checked {
+  color: #888;
+}
+
+li.checked .text {
+  text-decoration: line-through;
+}
+
+li.private {
+  background: #dde0eb;
+  border-color: #dde0eb;
+}
+
+header .hide-completed {
+  float: right;
+}
+
+.toggle-private {
+  margin-left: 10px;
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+/* New Css */
+
+div#login-buttons a {
+  font-weight: bold;
+  color: #384792;
+  text-decoration: none !important;
+}
+
+.hide-completed {
+    margin-right: 10px;
+    color: #384792;
+    font-weight: bold;
+}
+
+.hide-completed input {
+  margin-top: 0 !important;
+  display: none;
+}
+
+#login-buttons .login-link-and-dropdown-list {
+  margin-top: 3px;
+}
+
+#login-buttons .login-close-text {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#login-buttons .login-button, .accounts-dialog .login-button {
+  background-color: #384792 !important;
+  border-radius: 0px;
+}
+
+.private .toggle-private {
+    background-color: #384792;
+    border-color: #384792;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+  li {
+    padding: 12px 15px;
+  }
+
+  .search {
+    width: 150px;
+    clear: both;
+  }
+
+  .new-task input {
+    padding-bottom: 5px;
+  }
+}
+
